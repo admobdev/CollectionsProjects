@@ -14,7 +14,6 @@ public class ListService implements ListController {
         String name = sc.next();
         System.out.println("Phone number: ");
         String phoneNum = sc.next();
-        phoneNum.replaceAll("(...)(..)(...)(..)(..)","+$1($2)$3-$4-$5");
         Contact obj = new Contact(name, phoneNum);
         contactList.add(obj);
     }
