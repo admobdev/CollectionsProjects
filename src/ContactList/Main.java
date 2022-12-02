@@ -6,14 +6,14 @@ class Main {
     public static void main(String[] args) {
         ListController service = new ListService();
         Scanner sc = new Scanner(System.in);
-        while(true){
+        while (true) {
             System.out.println("""
-                    1 -> add
-                    2 ->list
-                    3 ->delete
-                    4 ->search
-                    5 ->edit""");
-            switch (sc.nextInt()){
+                    1 -> Add contact 
+                    2 -> List of contacts
+                    3 -> Delete contact
+                    4 -> Search contact
+                    5 -> Edit contact""");
+            switch (sc.nextInt()) {
                 case 1 -> service.addContact();
                 case 2 -> service.list();
                 case 3 -> service.deleteContact();
