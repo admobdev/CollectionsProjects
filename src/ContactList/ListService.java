@@ -12,9 +12,10 @@ public class ListService implements ListController {
     public void addContact() {
         System.out.println("Name: ");
         String name = sc.next();
-        System.out.println("SureName: ");
-        String sureName = sc.next();
-        Contact obj = new Contact(name, sureName);
+        System.out.println("Phone number: ");
+        String phoneNum = sc.next();
+        phoneNum.replaceAll("(...)(..)(...)(..)(..)","+$1($2)$3-$4-$5");
+        Contact obj = new Contact(name, phoneNum);
         contactList.add(obj);
     }
 
@@ -52,10 +53,10 @@ public class ListService implements ListController {
         contactList.remove(sc.nextInt() - 1);
         System.out.println("New Contact name: ");
         String name = sc.next();
-        System.out.println("New Contact SureName: ");
-        String sureName = sc.next();
+        System.out.println("New Contact phone number: ");
+        String phoneNumber = sc.next();
 
-        contactList.set(sc.nextInt() - 1, new Contact(name, sureName));
+        contactList.set(sc.nextInt() - 1, new Contact(name, phoneNumber));
     }
 }
 

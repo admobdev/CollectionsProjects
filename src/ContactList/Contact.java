@@ -2,20 +2,20 @@ package ContactList;
 
 public class Contact {
     private String name;
-    private String sureName;
+    private String phoneNumber;
 
     public String getName() {
         return name;
     }
 
-    public Contact(String name, String sureName) {
+    public Contact(String name, String phoneNumber) {
         this.name = name;
-        this.sureName = sureName;
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
-        return "Name: " + name + " SurName: " + sureName;
+        return "Name: " + name + " SurName: " + phoneNumber;
     }
 }
 

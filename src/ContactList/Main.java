@@ -8,7 +8,7 @@ class Main {
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("""
-                    1 -> Add contact 
+                    1 -> Add contact
                     2 -> List of contacts
                     3 -> Delete contact
                     4 -> Search contact
