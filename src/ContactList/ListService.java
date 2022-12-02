@@ -1,9 +1,8 @@
-package Interface;
+package ContactList;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class ListService implements ListController{
     private List<Contact> contactList = new ArrayList<>();
     private Scanner sc = new Scanner(System.in);
@@ -53,3 +52,4 @@ public class ListService implements ListController{
         contactList.set(sc.nextInt()-1, new Contact(name,sureName));
     }
 }
+
